@@ -17,7 +17,15 @@ public class MemberAction extends Action{
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		
+		String action = request.getParameter("action");
 		
-		return super.execute(mapping, form, request, response);
+		String id = request.getParameter("id");
+		MemberDAO dao = new MemberDAO();
+		Member user = dao.select(id);
+		
+		
+		
+		return mapping.findForward("success");
+		
 	}
 }
