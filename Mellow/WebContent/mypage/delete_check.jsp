@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>회원 탈퇴(비밀번호 입력)</title>
+<style>
+	#background {
+		width: 540px;
+		height: 600px;
+		background-color: #F0F8FF;
+	}
+</style>
+</head>
+<!-- delete_check.jsp(회원탈퇴를 위한 비밀번호 입력폼) --> 
+<body>
+	<center>
+	<div id="background">
+	<form>
+	<table border="1" cellpadding="5">
+		<caption>회원탈퇴</caption>
+		<tr>
+		   <td colspan="2" align="center"> ※귀하의 회원탈퇴를 위해서 다시 한 번 <br>
+		   		 비밀번호를 입력해주시길 바랍니다.</td>
+		</tr>
+		<tr>
+			<td> 비밀번호 </td>
+			<td><input type="password" name="pass"></td>
+		</tr>
+		<tr>
+			<td>비밀번호 확인 </td>
+			<td><input type="password" name="passch"></td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center">
+		<input type="reset" value="취소"> <input type="submit" value="확인">
+		</td>
+		</tr>
+	</table>
+	</form>
+	</div>
+	</center>
+</body>
+</html>

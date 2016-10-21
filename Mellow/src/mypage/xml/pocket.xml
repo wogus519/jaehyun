@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd" >
+<sqlMap namespace="pocket">
+	<insert id="insert" parameterClass="mypage.beans.Pocket">
+		insert into pocket values (#id#,#count#,#item_name#)
+	</insert>
+	
+	<delete id="delete" parameterClass="String">
+		delete from pocket
+		where id=#id#
+	</delete>
+	
+	<select id="findAll" resultClass="mypage.beans.Pocket">
+		select id, count, item_name
+		from pocket
+	</select>
+</sqlMap>

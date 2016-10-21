@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd" >
+<sqlMap namespace="member">
+	<insert id="insert" parameterClass="mypage.beans.Member">
+		insert into member values (member_seq.nextvalue,#id#,#password#,#password_ck#,#name#,#postcode#,#address#,#phone#,#email#)
+	</insert>
+	
+	<delete id="delete" parameterClass="String">
+		delete from member
+		where id=#id# 
+	</delete>
+	
+	<update id="update" parameterClass="mypage.beans.Member">
+		update member
+		set password=#password#, password_ck=#password_ck#, postcode=#postcode#, address=#address#, phone=#phone#, email=#email#
+	</update>
+	
+	<select id="find" parameterClass="String" resultClass="mypage.beans.Member">
+		select password,password_ck,name,postcode,address,phone,email
+		from member
+		where id=#id#
+	</select>
+</sqlMap>
