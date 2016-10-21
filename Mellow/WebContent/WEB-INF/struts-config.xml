@@ -7,10 +7,12 @@
 
 	<action-mappings>
 
-		
-		<action path="/main" forward="/view/mainview.jsp" />
-		
-		
+
+		<action path="/main" type="mellow.actions.MellowAction">
+			<forward name="main" path="/view/mainview.jsp" />
+		</action>
+
+
 	</action-mappings>
 
 </struts-config>

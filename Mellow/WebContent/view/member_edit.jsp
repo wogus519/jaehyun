@@ -6,18 +6,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>회원 정보 변경</title>
 <style>
-	#background {
-		width: 540px;
-		height: 600px;
-		background-color: #F0F8FF;
-	}
+	
 </style>
 </head>
 <!-- member_edit.jsp(회원정보 변경) --> 
 <body>
 	<center>
 		<div id="background">
-		<br><br><br><br><br>
 		<form>
 			<table border="1" cellpadding="5">
 				<caption>회원정보변경</caption>

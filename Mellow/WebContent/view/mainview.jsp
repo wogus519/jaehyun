@@ -8,11 +8,11 @@
 
 <style >
 
-#wrap{ float:left; width:1340px; height:100%;background-color:#9E9ECF;}
-#head {float:left; width:1340px;}
+#wrap{ float:left; width:1348px; height:100%;background-color:#9E9ECF;}
+#head {float:left; width:1348px;}
 #sidebar {float:left; width:270px; height:320px; background-color:#9E9ECF;}
-#contents {float:left; width:1070px;  background-color:#FFF; }
-#footer {float:left; width:1340%; height:100px; background-color:#D8D8EB; }
+#contents {float:left; width:1078px;  background-color:#FFF; padding-top: 50px;}
+#footer {float:left; width:1348px; height:100px; background-color:#D8D8EB;margin-top: 50px; }
 </style>
 
 </head>
@@ -20,7 +20,7 @@
 <body>
 <div id="wrap">
 <div id="head" ><jsp:include page="header.jsp" flush="true"/></div>
-<div id="sidebar">side</div>
+<div id="sidebar"><jsp:include page="sidebar_produce.jsp" flush="true"/></div>
 <div id="contents"><jsp:include page="member_edit.jsp" flush="true"/></div>
 <div id="footer">footer</div>
 </div>
